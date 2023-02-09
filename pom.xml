@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>io.github.dearrudam</groupId>
-	<artifactId>book-store-api</artifactId>
+	<artifactId>book-catalog-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>book-store-api</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Sample project for studies purposes</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
