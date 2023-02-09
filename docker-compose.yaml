@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0.30
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: dev_db
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+      MYSQL_ROOT_PASSWORD: mysql_root
+    cap_add:
+      - SYS_NICE # https://stackoverflow.com/a/55706057/1240480
+    volumes:
+      - mysql-data:/var/lib/mysql # persist data even if container shuts down
+
+volumes:
+  mysql-data: # named volumes can be managed easier using docker-compose
+    driver: local
