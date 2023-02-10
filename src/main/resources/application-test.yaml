@@ -1,6 +1,0 @@
-datasource:
-  url: jdbc:h2:mem:test_db
-  username: sa
-h2:
-  console:
-    enabled: false
